@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  /* scrool kebawah */
+  padding-bottom: 1000px;
+}
+
+/* latihan-satu */
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 */
+
+.container-dua {
+  /* supaya layar lebar responsif saat di besar kecilkan */
+  max-width: 800px;
+  margin: 50px auto;
+  
+}
+
+.layanan {
+  width: 30%;
+  padding: 20px;
+  /* supaya tidak merubah ukuran kotak */
+  box-sizing: border-box;
+}
+
+.layanan.satu {
+  background-color: rgb(113, 113, 239);
+}
+
+.layanan.dua {
+  background-color: rgb(117, 227, 117);
+}
+
+.layanan.tiga {
+  background-color: rgb(239, 106, 106);
+}
+
+/* responsive */
+@media(min-width : 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* kalo < 600px pake css diatas.dan kalo > 600px pakai css ini */
+
+/* buat sejajar  */
+/* biar ada jarak tiap kotak */
